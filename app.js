@@ -3,7 +3,7 @@ const forwardBtn = document.querySelector('.slider__forward')
 const backBtn = document.querySelector('.slider__back')
 
 let leftCount = -2400
-function forwardImg() {
+function backImg() {
     if (leftCount > -1) {
         leftCount = -2400
         sliderImg.style.left = `${leftCount}px`
@@ -12,7 +12,7 @@ function forwardImg() {
         sliderImg.style.left = `${leftCount}px`
     }
 }
-function backImg() {
+function forwardImg() {
     if (leftCount < -2399) {
         leftCount = 0
         sliderImg.style.left = `${leftCount}px`
